@@ -536,7 +536,7 @@ class DigitalTwinApp(QMainWindow):
         step3_v.addWidget(self.travel_input)
         sl.addWidget(step3_frame)
         
-        self.travel_input.currentIndexChanged.connect(lambda: self.fetch_vitals())
+        self.travel_input.currentIndexChanged.connect(lambda: self.run_manual_vitals_check())
 
         # Combined analyse button
         self.analyse_btn = QPushButton("🔬  Analyse Temp + Symptoms")
