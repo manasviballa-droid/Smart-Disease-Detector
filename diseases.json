@@ -1,0 +1,295 @@
+{
+  "Malaria": {
+    "mosquito": "Anopheles (female)",
+    "temperature": 40.5,
+    "severity": "Critical",
+    "organs": ["spleen", "liver", "brain", "kidney"],
+    "symptoms": [
+      "Cyclic high fever every 48-72 hours",
+      "Severe chills and rigors",
+      "Headache and myalgia",
+      "Nausea and vomiting",
+      "Enlarged spleen (splenomegaly)",
+      "Anaemia and jaundice"
+    ],
+    "temperature_stages": [
+      {
+        "range": "37.5°C – 38.0°C",
+        "stage": "Cold / Prodromal",
+        "symptoms": "Onset of chills and shivering (rigors); bone-rattling chills lasting 15–60 min as hypothalamus raises thermostat. Mild headache, fatigue. [CDC Malaria Clinical Features; Medmastery Malaria Guide]"
+      },
+      {
+        "range": "38.0°C – 39.0°C",
+        "stage": "Rising Fever",
+        "symptoms": "Fever rising as body reaches hypothalamic set-point. Chills resolve; headache, myalgia (muscle ache), arthralgia, weakness, nausea and vomiting emerge. [CDC DPDx Malaria; CDC Yellow Book 2026]"
+      },
+      {
+        "range": "39.0°C – 40.0°C",
+        "stage": "Hot / Febrile",
+        "symptoms": "Sustained high fever (hot stage); intense headache, flushing, tachycardia, general malaise. Lasts 6–10 hours. Spleen begins to enlarge. [Medmastery Malaria Clinical Guide; CDC Clinical Features of Malaria]"
+      },
+      {
+        "range": "40.0°C – 41.0°C",
+        "stage": "Severe Febrile",
+        "symptoms": "Fever spikes; severe anaemia, jaundice (haemolysis of RBCs), hepatosplenomegaly, thrombocytopenia, hypoglycaemia. Risk of acute kidney injury. [CDC Malaria; WHO Guidelines for Malaria; CDC Yellow Book 2026]"
+      },
+      {
+        "range": "41.0°C+",
+        "stage": "Critical / Cerebral",
+        "symptoms": "Cerebral malaria (P. falciparum): seizures, impaired consciousness, coma. Acute respiratory distress, multi-organ failure. Medical emergency — rapid deterioration and death possible. [CDC Clinical Features; WHO Guidelines for Malaria]"
+      }
+    ]
+  },
+
+  "Dengue": {
+    "mosquito": "Aedes aegypti",
+    "temperature": 40.0,
+    "severity": "High",
+    "organs": ["liver", "blood", "skin"],
+    "symptoms": [
+      "Sudden high fever (2–7 days)",
+      "Severe retro-orbital pain (pain behind eyes)",
+      "Bone, joint and muscle pain",
+      "Macular or maculopapular skin rash",
+      "Minor haemorrhagic manifestations",
+      "Thrombocytopenia (low platelet count)"
+    ],
+    "temperature_stages": [
+      {
+        "range": "38.0°C – 39.0°C",
+        "stage": "Febrile Phase (Day 1–3)",
+        "symptoms": "Abrupt fever onset after 5–7 day incubation. Facial flushing, erythema, generalized body pain, retro-orbital pain, headache, myalgia, arthralgia, nausea. [PAHO/WHO Dengue; CDC Yellow Book Dengue 2025]"
+      },
+      {
+        "range": "39.0°C – 40.0°C",
+        "stage": "Febrile Phase (Day 3–5)",
+        "symptoms": "High fever 40–41°C with rash (macular/maculopapular). Minor haemorrhagic signs: petechiae, ecchymosis, epistaxis, bleeding gums. Leukopenia and thrombocytopenia begin. [WHO 2009 Dengue Classification; CDC Yellow Book 2025]"
+      },
+      {
+        "range": "38.0°C (defervescence)",
+        "stage": "Critical Phase (Day 5–7)",
+        "symptoms": "Fever drops to ~38°C — WARNING: highest risk phase. Plasma leakage, shock risk. Warning signs: severe abdominal pain, persistent vomiting, fluid accumulation, mucosal bleeding, lethargy, hepatomegaly, rising HCT + falling platelets. [CDC Yellow Book 2025; PMC8205005]"
+      },
+      {
+        "range": "37.0°C – 38.0°C",
+        "stage": "Recovery / Convalescent (Day 7–10)",
+        "symptoms": "Fever resolves; reabsorption of leaked fluids. Risk of fluid overload and bradycardia. Rash may recur (islands of white in sea of red). Appetite returns gradually. [CDC Yellow Book Dengue 2025; WHO Dengue Guidelines 2009]"
+      },
+      {
+        "range": "39.0°C+ (recurrent)",
+        "stage": "Severe Dengue",
+        "symptoms": "Biphasic saddleback fever recurs in severe dengue. Severe plasma leakage, dengue shock syndrome, severe haemorrhage (haematemesis, melena), organ impairment (liver, CNS, heart, kidneys). [Medscape Dengue; CDC Yellow Book 2025]"
+      }
+    ]
+  },
+
+  "Chikungunya": {
+    "mosquito": "Aedes aegypti / Aedes albopictus",
+    "temperature": 39.5,
+    "severity": "Moderate",
+    "organs": ["joints", "muscles", "skin", "lymph_nodes"],
+    "symptoms": [
+      "Abrupt high fever (typically >39°C)",
+      "Severe, incapacitating joint pain (polyarthralgia)",
+      "Joint swelling (polyarthritis)",
+      "Maculopapular rash (trunk and limbs)",
+      "Headache, myalgia, fatigue",
+      "Possible chronic arthritis (months to years)"
+    ],
+    "temperature_stages": [
+      {
+        "range": "38.0°C – 39.0°C",
+        "stage": "Acute Phase — Onset",
+        "symptoms": "Abrupt fever onset 4–8 days post-bite. Severe arthralgia in small joints (hands, wrists, feet, ankles), headache, myalgia, conjunctivitis. Fever typically >39°C at onset. [WHO CHIKV Fact Sheet 2025; CDC Chikungunya 2024; Wikipedia citing WHO/CDC]"
+      },
+      {
+        "range": "39.0°C – 40.0°C",
+        "stage": "Acute Phase — Peak",
+        "symptoms": "Peak fever; excruciating polyarthritis and polyarthralgia. Maculopapular rash appears on trunk and limbs (approx. day 2–5). Lymph node swelling, severe fatigue, possible nausea. [WHO CHIKV 2025; WHO Arboviral Guidelines 2025 (NBK616300)]"
+      },
+      {
+        "range": "37.5°C – 38.5°C",
+        "stage": "Subacute Phase (Week 2–3)",
+        "symptoms": "Fever subsides but arthralgia persists or worsens in some patients. Joint stiffness, tenosynovitis, bursitis emerge. Fatigue continues. Rash may resolve. [WHO Arboviral Disease Guidelines 2025; CDC Chikungunya clinical overview]"
+      },
+      {
+        "range": "37.0°C – 37.5°C",
+        "stage": "Chronic Phase (>3 months)",
+        "symptoms": "Persistent inflammatory polyarthritis lasting months to years in up to 60% of patients. Destructive arthritis resembling rheumatoid arthritis in severe cases. Functional disability. [WHO CHIKV Fact Sheet 2025; Lancet / peer-reviewed follow-up studies]"
+      },
+      {
+        "range": "39.0°C+",
+        "stage": "Severe / Atypical",
+        "symptoms": "Rare atypical presentations: encephalitis, myocarditis, acute hepatitis, severe bullous dermatosis, haemorrhage. Higher risk in neonates, >65 yrs, and those with comorbidities. [WHO Arboviral Guidelines 2025; WHO CHIKV 2015 case definition — severe acute disease]"
+      }
+    ]
+  },
+
+  "Zika": {
+    "mosquito": "Aedes aegypti",
+    "temperature": 38.5,
+    "severity": "Mild",
+    "organs": ["brain", "eyes", "skin", "joints"],
+    "symptoms": [
+      "Low-grade fever (usually <38.5°C)",
+      "Non-purulent conjunctivitis (red eyes)",
+      "Maculopapular pruritic rash",
+      "Arthralgia / arthritis in small joints",
+      "Myalgia and headache",
+      "Microcephaly risk in fetal exposure"
+    ],
+    "temperature_stages": [
+      {
+        "range": "37.5°C – 38.0°C",
+        "stage": "Early / Mild Febrile",
+        "symptoms": "Low-grade fever beginning 3–14 days post-bite. Mild malaise, headache. Pruritic maculopapular rash begins on face and spreads to trunk and limbs. [CDC Zika clinical guidance; WHO Arboviral Guidelines 2025]"
+      },
+      {
+        "range": "38.0°C – 38.5°C",
+        "stage": "Acute Symptomatic",
+        "symptoms": "Non-purulent conjunctivitis (bilateral red eyes), arthralgia in small joints (hands, feet), myalgia, rash peaks. Majority of cases self-resolve within 2–7 days. [WHO Zika Fact Sheet; CDC comparative analysis medrxiv 2025; WHO Arboviral Guidelines 2025]"
+      },
+      {
+        "range": "37.0°C – 37.5°C",
+        "stage": "Resolution",
+        "symptoms": "Fever resolves within 1 week. Rash fades. Mild fatigue and joint discomfort may persist briefly. Most adults recover fully without intervention. [CDC Zika; WHO Zika Fact Sheet 2025]"
+      },
+      {
+        "range": "37.0°C (maternal)",
+        "stage": "Congenital / Fetal Risk",
+        "symptoms": "In pregnant women: even mild or asymptomatic Zika can cause fetal microcephaly, brain malformations, and congenital Zika syndrome regardless of maternal fever severity. Highest risk in 1st trimester. [WHO; CDC; NEJM peer-reviewed studies]"
+      },
+      {
+        "range": "37.0°C – 38.0°C",
+        "stage": "Neurological (Rare)",
+        "symptoms": "Guillain-Barré syndrome (GBS) in rare post-infection cases: ascending muscle weakness, paralysis, areflexia. Onset 2–4 weeks after acute illness. Risk ~1 in 4,000 symptomatic infections. [WHO Zika Fact Sheet; peer-reviewed GBS-Zika studies in The Lancet]"
+      }
+    ]
+  },
+
+  "Yellow Fever": {
+    "mosquito": "Aedes aegypti",
+    "temperature": 40.0,
+    "severity": "Critical",
+    "organs": ["liver", "kidney", "heart", "skin"],
+    "symptoms": [
+      "Sudden high fever (39–40°C) with chills",
+      "Jaundice — yellowing of skin and sclera",
+      "Severe headache, lumbosacral pain, myalgia",
+      "Nausea, vomiting, epigastric pain",
+      "Haematemesis (vomiting blood)",
+      "Oliguria, renal insufficiency, DIC"
+    ],
+    "temperature_stages": [
+      {
+        "range": "39.0°C – 40.0°C",
+        "stage": "Infection Phase (Day 1–3)",
+        "symptoms": "Sudden onset: fever 39–40°C, chills, headache, dizziness, myalgia, lumbosacral pain. Faget sign: relative bradycardia despite high fever (pulse-temperature dissociation). Facial flushing, conjunctival injection. [MSD Manual; CDC Yellow Fever Clinical Features 2024; NCBI StatPearls NBK470425]"
+      },
+      {
+        "range": "37.5°C – 38.0°C",
+        "stage": "Remission Phase (Day 3–4)",
+        "symptoms": "Fever drops suddenly after 3 days — apparent recovery lasting hours to a day. Virus cleared by immune response. ~85% of patients recover permanently at this stage. [CDC Yellow Fever HCP 2024; MSD Manual; Medscape Yellow Fever]"
+      },
+      {
+        "range": "39.0°C – 40.0°C",
+        "stage": "Intoxication Phase (Day 4–7)",
+        "symptoms": "Fever recurs in ~15% of cases. Jaundice, dark urine (bilirubinuria), epigastric pain, profuse vomiting. Hepatorenal syndrome, albuminuria. Transaminases markedly elevated. [CDC Yellow Fever Clinical Features 2024; NCBI NBK470425; MSD Manual]"
+      },
+      {
+        "range": "40.0°C – 41.0°C",
+        "stage": "Toxic Phase — Haemorrhagic",
+        "symptoms": "Haematemesis (black vomit), melena, petechiae, mucosal haemorrhage, epistaxis, oozing from gingiva. DIC (disseminated intravascular coagulation). Acute kidney failure, oliguria. [CDC Yellow Fever 2024; Medscape; MSD Manual]"
+      },
+      {
+        "range": "41.0°C+",
+        "stage": "Critical / Multi-organ Failure",
+        "symptoms": "Cardiovascular instability, acute hepatic failure, renal failure, haemorrhagic shock, delirium, seizures, coma. Case fatality 20–60% in severe disease. ICU mandatory. [WHO Yellow Fever Fact Sheet 2025; NCBI NBK470425; MSD Manual]"
+      }
+    ]
+  },
+
+  "West Nile Fever": {
+    "mosquito": "Culex species",
+    "temperature": 39.0,
+    "severity": "Moderate",
+    "organs": ["brain", "spinal_cord", "lymph_nodes", "skin"],
+    "symptoms": [
+      "Fever and headache",
+      "Body aches, fatigue",
+      "Skin rash on trunk",
+      "Swollen lymph nodes",
+      "Encephalitis or meningitis (in <1% of cases)",
+      "Neck stiffness, confusion, seizures (neuroinvasive)"
+    ],
+    "temperature_stages": [
+      {
+        "range": "37.0°C – 37.5°C",
+        "stage": "Asymptomatic (80% of cases)",
+        "symptoms": "Approximately 80% of WNV-infected persons have no symptoms after 2–14 day incubation. Subclinical infection; seroconversion occurs silently. [CDC West Nile Virus; Wikipedia citing CDC 2017/2019; PMC3855145]"
+      },
+      {
+        "range": "37.5°C – 38.5°C",
+        "stage": "West Nile Fever (20% of cases)",
+        "symptoms": "Fever, headache, body aches, fatigue, nausea, vomiting. Maculopapular rash on trunk in some patients. Swollen lymph nodes. Self-limiting; resolves within days to weeks. [CDC West Nile; Wikipedia citing CDC; PMC3855145]"
+      },
+      {
+        "range": "38.5°C – 39.5°C",
+        "stage": "Severe Systemic",
+        "symptoms": "Prolonged fever, marked fatigue and weakness, significant myalgia. Post-infectious fatigue syndrome possible. Elevated inflammatory markers. [CDC West Nile clinical; PMC3855145 peer review]"
+      },
+      {
+        "range": "38.0°C – 40.0°C",
+        "stage": "Neuroinvasive Disease (<1%)",
+        "symptoms": "West Nile encephalitis: altered consciousness, disorientation, tremors, seizures. West Nile meningitis: neck stiffness, photophobia, Kernig/Brudzinski signs. Acute flaccid paralysis (polio-like). Risk highest in elderly and immunocompromised. [CDC; PMC3855145; WHO WNV Fact Sheet]"
+      },
+      {
+        "range": "39.0°C – 41.0°C",
+        "stage": "Critical Neurological",
+        "symptoms": "Coma, respiratory failure requiring ventilation. Long-term neurological sequelae in survivors. Mortality ~10% among neuroinvasive cases. [Wikipedia citing CDC; PMC3855145; CDC West Nile neuroinvasive surveillance]"
+      }
+    ]
+  },
+
+  "Lymphatic Filariasis": {
+    "mosquito": "Culex / Anopheles / Aedes",
+    "temperature": 38.8,
+    "severity": "Chronic",
+    "organs": ["lymph_nodes", "skin", "limbs"],
+    "symptoms": [
+      "Mostly asymptomatic (years to decades)",
+      "Acute filarial lymphangitis (AFL) episodes",
+      "Progressive lymphoedema of limbs",
+      "Skin thickening and hardening",
+      "Hydrocele in males",
+      "Elephantiasis (severe chronic stage)"
+    ],
+    "temperature_stages": [
+      {
+        "range": "37.0°C – 37.5°C",
+        "stage": "Asymptomatic (Years–Decades)",
+        "symptoms": "Most infected persons remain permanently asymptomatic. Microfilariae circulate in blood nocturnally. Subclinical lymphatic dilation and dysfunction occur silently. Worm burden accumulates over repeated bites. [CDC Lymphatic Filariasis Clinical Overview; NCBI StatPearls NBK556012]"
+      },
+      {
+        "range": "38.0°C – 38.8°C",
+        "stage": "Acute Filarial Lymphangitis (AFL)",
+        "symptoms": "Episodic fever (38–39°C), chills, headache, myalgia during acute flares triggered by adult worm death. Retrograde lymphangitis (inflamed lymph vessel from node outward toward skin), painful lymphadenopathy. [CDC Lymphatic Filariasis Clinical Overview 2026; NCBI NBK556012]"
+      },
+      {
+        "range": "38.0°C – 39.0°C",
+        "stage": "Acute Dermatolymphangioadenitis (ADLA)",
+        "symptoms": "Secondary bacterial skin infection causing oedematous inflammatory plaques, fever, chills, myalgia. Recurrent ADLA episodes accelerate progression to chronic lymphoedema. [NCBI StatPearls NBK556012; CDC Filarial Worms HCP 2026]"
+      },
+      {
+        "range": "37.0°C – 38.0°C",
+        "stage": "Chronic Lymphoedema",
+        "symptoms": "Afebrile between attacks. Progressive, irreversible swelling of limbs, breasts, genitalia (hydrocele). Skin thickening, fibrosis, warty surface changes. Social stigma and functional disability. [CDC Lymphatic Filariasis About Page; WHO NTD Fact Sheet]"
+      },
+      {
+        "range": "37.0°C – 37.5°C",
+        "stage": "Elephantiasis (Advanced)",
+        "symptoms": "Massive non-pitting oedema (elephantiasis) of one or both legs, arms or genitalia. Hardened, lichenified skin. Recurrent bacterial superinfections. WHO-designated leading cause of disability worldwide. Tropical pulmonary eosinophilia (TPE) in rare cases. [CDC; WHO; NCBI NBK556012]"
+      }
+    ]
+  }
+}

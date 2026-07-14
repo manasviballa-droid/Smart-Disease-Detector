@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digital Twin Vitals</title>
+</head>
+
+<body>
+
+    <h2>Patient Vitals</h2>
+
+    Temperature (°F):
+    <input id="temp" value="101.3">
+    <br><br>
+
+    Heart Rate (BPM):
+    <input id="hr" value="80">
+    <br><br>
+
+    SpO₂ (%):
+    <input id="spo2" value="98">
+    <br><br>
+
+    BP Systolic:
+    <input id="sys" value="120">
+    <br><br>
+
+    BP Diastolic:
+    <input id="dia" value="80">
+    <br><br>
+
+    Travel History / Region:
+    <select id="travel">
+        <option value="none">No Recent Travel / Local</option>
+        <option value="africa">Sub-Saharan Africa</option>
+        <option value="americas">South / Central America</option>
+        <option value="asia">South / Southeast Asia</option>
+        <option value="other">Other / Non-Endemic Regions</option>
+    </select>
+    <br><br>
+
+    <button onclick="sendData()">Send To Digital Twin</button>
+
+    <script>
+
+        async function sendData() {
+            const url = window.location.origin && window.location.origin !== "null" && !window.location.origin.startsWith("file://")
+                ? "/update"
+                : "http://127.0.0.1:5000/update";
+
+            await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    temperature: parseFloat(document.getElementById("temp").value),
+                    heart_rate: parseInt(document.getElementById("hr").value),
+                    spo2: parseInt(document.getElementById("spo2").value),
+                    bp_sys: parseInt(document.getElementById("sys").value),
+                    bp_dia: parseInt(document.getElementById("dia").value),
+                    travel_history: document.getElementById("travel").value
+                })
+            });
+
+            alert("Data Sent Successfully!");
+        }
+
+    </script>
+
+</body>
+
+</html>
