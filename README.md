@@ -14,11 +14,14 @@ This application includes a **live patient vitals simulator** (via Flask), **com
 2. **Clinical Bayesian Diagnostic Engine**: Replaces heuristic scoring with a rigorous Bayesian framework using travel history baseline priors and clinical likelihood ratios:
    - **Regional Priors**: Africa (Malaria, Yellow Fever), Asia (Dengue, Chikungunya), Americas (Zika, Dengue).
    - **Clinical Vitals Likelihoods**: Analyzes extreme/moderate fevers, relative bradycardia (Faget's sign in Yellow Fever), critical hypoxemia (low $SpO_2$), and hypotension (shock risk in Dengue/Yellow Fever).
-3. **Webcam Symptoms Detection (OpenCV)**:
-   - **Conjunctivitis (Red Eye)**: Analyzes the sclera region inside eye detections, requiring an ultra-strict red channel dominance ratio ($>1.55 \times$) in the upper face area to avoid false positives.
-   - **Skin Rash**: Scans for highly saturated red skin zones using an HSV mask (threshold $>80,000$ pixels).
-4. **Interactive Overlap Resolution**: Automatically prompts the user with Catppuccin-themed **Yes** and **No** buttons to answer differential questions when candidate diseases overlap ($<20\%$ confidence difference).
-5. **Vitals Simulation Controller**: Hosts a Flask web server allowing any phone or browser to transmit real-time patient vitals (temperature, heart rate, $SpO_2$, blood pressure, and travel history).
+3. **Webcam Symptoms Detection & Checklist Auto-Sync**: 
+   - Webcam processing runs in a dedicated background `QThread` to ensure lag-free GUI rendering.
+   - Detects **Red Eyes (Conjunctivitis)** and **Skin Rash** using optimized OpenCV Haar cascades and HSV masking.
+   - Automatically checks/unchecks the corresponding manual checkboxes in real time.
+4. **Dual Mode Vitals Entry (Manual & Live Telemetry)**:
+   - **Enter Vitals Card**: Allows entering Temperature, Heart Rate, SpO₂, and Blood Pressure directly in the desktop application.
+   - **Live Simulator**: Toggle to connect to the Flask vitals simulation server for real-time mobile/browser remote telemetry inputs.
+5. **Interactive Overlap Resolution**: Automatically prompts the user with Catppuccin-themed **Yes** and **No** buttons to answer differential questions when candidate diseases overlap ($<20\%$ confidence difference).
 
 ---
 
